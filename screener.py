@@ -26,7 +26,7 @@ async def main():
         choice = input("\n➡️  Выбери номер биржи: ")
         selected = connections['connections'][int(choice) - 1]
         
-        print(f"\n📈 Загрузка монет {selected['exchange']}...")
+        print(f"\n📈 ��агрузка монет {selected['exchange']}...")
         
         # Получаем монеты
         response = await client.get_tickers(selected['id'])
